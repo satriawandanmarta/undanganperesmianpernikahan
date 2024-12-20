@@ -129,16 +129,19 @@ p {
 
 .gallery-images {
     display: flex;
-    justify-content: center;
+    justify-content: start; /* Atur gambar mulai dari sisi kiri */
     gap: 15px;
-    flex-wrap: wrap;
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    white-space: nowrap; /* Pastikan semua elemen tetap dalam satu baris */
+    padding: 10px;
 }
 
 .gallery-images img {
-    width: 100%;
-    max-width: 300px;
+    max-width: 200px; /* Atur lebar gambar agar pas */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Tetapkan elemen sebagai inline */
 }
 
 /* Music Section */
