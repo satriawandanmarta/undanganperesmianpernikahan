@@ -249,3 +249,20 @@ footer {
     height: 300px;
     border: 0;
 }
+
+.gallery-images {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    overflow-x: auto; /* Scroll horizontal */
+    white-space: nowrap; /* Pastikan semua elemen tetap dalam satu baris */
+    padding: 10px;
+}
+
+.gallery-images img {
+    max-width: 150px; /* Atur lebar gambar agar muat lebih banyak */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Tetapkan elemen sebagai inline */
+}
