@@ -41,7 +41,7 @@ p {
 
 /* Hero Section */
 .hero {
-    background: url('assets/images/DSC04390.jpg') no-repeat center center/cover;
+    background: url('https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/DSC04390.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
