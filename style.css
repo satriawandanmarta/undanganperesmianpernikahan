@@ -16,7 +16,7 @@ h1, h2, h3 {
 
 h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5em; /* Ukuran font lebih kecil untuk perangkat mobile */
+    font-size: 3em;
     color: #d4af37;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -28,13 +28,13 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #d4af37;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
     margin: 10px 0;
 }
@@ -42,27 +42,26 @@ p {
 /* Hero Section */
 .hero {
     background: url('https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/1.jpg') no-repeat center center/cover;
-    height: 60vh; /* Menurunkan tinggi agar lebih pas untuk layar mobile */
+    height: 80vh; /* Menyesuaikan tinggi hero */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
     color: white;
-    padding: 10px;
 }
 
 .hero .overlay {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
 }
 
 /* Button Styling */
 .btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 15px 30px;
     background: #d4af37;
     color: white;
     text-decoration: none;
@@ -78,21 +77,21 @@ p {
 
 /* Details Section */
 .details {
-    padding: 20px;
+    padding: 40px;
     background: white;
     text-align: center;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 500px; /* Memastikan ukuran responsif untuk mobile */
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .details h3 {
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #d4af37;
 }
 
@@ -113,53 +112,36 @@ p {
     line-height: 1.5;
 }
 
-.details .btn {
-    background: #ffd700;
-    color: #333;
-}
-
-.details .btn:hover {
-    background: #e6b800;
-}
-
 /* Gallery Section */
 .gallery {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
 .gallery-images {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .gallery-images img {
     width: 100%;
-    max-width: 250px; /* Menyesuaikan ukuran gambar agar sesuai di layar kecil */
-    height: auto; /* Menjaga proporsi gambar */
+    max-width: 320px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Music Section */
 .music {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     background: #f8f9fa;
 }
 
-.music audio {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-/* Quotes Section */
+/* Quote Section */
 .quote {
-    padding: 20px;
+    padding: 30px;
     background: #d4af37;
     color: white;
     text-align: center;
@@ -167,15 +149,16 @@ p {
 
 .quote blockquote {
     font-size: 1.5em;
-    margin: 20px auto;
+    margin: 0;
     font-family: 'Great Vibes', cursive;
-    color: #fff;
-    background-color: #d4af37;
+    background-color: #f0e68c;
+    color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 90%;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Footer */
@@ -189,15 +172,15 @@ footer {
 /* Mobile Styling (Responsive Design for Android & iOS) */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     h3 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     p {
@@ -210,13 +193,13 @@ footer {
     }
 
     .gallery-images img {
-        width: 90%;
-        max-width: 250px;
+        width: 100%;
+        max-width: 300px;
     }
 
     .btn {
-        padding: 10px 15px;
-        font-size: 1em;
+        padding: 10px 20px;
+        font-size: 1.2em;
     }
 
     .details {
@@ -224,26 +207,15 @@ footer {
     }
 
     .details .detail-item {
-        margin-bottom: 20px;
         font-size: 1em;
     }
 
-    .details .detail-item i {
-        font-size: 1.5em;
-    }
-
-    .rsvp, .quote {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .hero {
-        height: 50vh; /* Mengurangi tinggi hero untuk lebih pas di perangkat mobile */
+        height: 60vh; /* Mengurangi tinggi hero untuk lebih pas di perangkat mobile */
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .hero h2 {
