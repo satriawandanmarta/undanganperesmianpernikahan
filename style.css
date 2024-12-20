@@ -75,12 +75,12 @@ p {
     background: #b7952b;
 }
 
-/* Details Section */
+/* Detail Acara Section */
 .details {
-    padding: 30px;
+    padding: 40px;
     background: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
@@ -114,8 +114,15 @@ p {
 
 /* Gallery Section */
 .gallery {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+    background: #f8f9fa;
+}
+
+.gallery h3 {
+    font-size: 2em;
+    color: #d4af37;
+    margin-bottom: 20px;
 }
 
 .gallery-images {
@@ -203,6 +210,10 @@ footer {
 
     .details {
         padding: 20px;
+    }
+
+    .details .detail-item {
+        font-size: 1em;
     }
 
     .hero {
