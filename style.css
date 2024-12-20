@@ -127,22 +127,6 @@ p {
     margin-bottom: 20px;
 }
 
-.gallery-images {
-    display: flex;
-    justify-content: start; /* Atur gambar mulai dari sisi kiri */
-    gap: 15px;
-    overflow-x: auto; /* Aktifkan scroll horizontal */
-    white-space: nowrap; /* Pastikan semua elemen tetap dalam satu baris */
-    padding: 10px;
-}
-
-.gallery-images img {
-    max-width: 200px; /* Atur lebar gambar agar pas */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block; /* Tetapkan elemen sebagai inline */
-}
 
 /* Music Section */
 .music {
@@ -248,4 +232,79 @@ footer {
     width: 100%;
     height: 300px;
     border: 0;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    overflow-x: auto; /* Scroll horizontal */
+    white-space: nowrap; /* Pastikan semua elemen tetap dalam satu baris */
+    padding: 10px;
+}
+
+.gallery-images img {
+    max-width: 150px; /* Atur lebar gambar agar muat lebih banyak */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Tetapkan elemen sebagai inline */
+}
+
+.gallery-images {
+    display: grid; /* Gunakan grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Atur jumlah kolom fleksibel */
+    gap: 15px; /* Jarak antar gambar */
+    padding: 10px;
+}
+
+.gallery-images img {
+    width: 100%; /* Buat gambar memenuhi kolom */
+    max-width: 200px; /* Atur ukuran maksimum */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-images {
+    display: flex;
+    flex-direction: column; /* Susun dalam kolom */
+    gap: 15px; /* Jarak antar baris */
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center; /* Pusatkan gambar di baris */
+    gap: 15px; /* Jarak antar gambar dalam baris */
+}
+
+.gallery-row img {
+    width: 100%;
+    max-width: 150px; /* Ukuran maksimal gambar */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect on Gallery Images */
+.gallery-images img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Increase Footer Padding */
+footer {
+    padding: 30px;
+}
+
+/* Mobile Gallery Adjustments */
+@media (max-width: 768px) {
+    .gallery-images {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+    .gallery-images img {
+        max-width: 100%; /* Make images full width */
+        margin-bottom: 15px; /* Add spacing between images */
+    }
 }
