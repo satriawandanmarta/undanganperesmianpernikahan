@@ -3,42 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Peresmian Pernikahan - Satriawan & Marta</title>
+    <title>Undangan Pernikahan - Satriawan & Marta</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
-    <header>
-        <h1>Undangan Pernikahan</h1>
-        <h2>Satriawan & Marta</h2>
-        <p>Dengan penuh rasa syukur dan bahagia, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara peresmian pernikahan kami. Kehadiran dan doa restu Anda akan menjadi anugerah terindah dalam momen istimewa ini.</p>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Undangan Peresmian Pernikahan</h1>
+            <h2>Satriawan & Marta</h2>
+            <p>Sabtu, 21 Desember 2024</p>
+            <p>Perumahan Nuansa Citra Madani, Blok E No. 1, Pasir Putih, Tanah Merah, Kampar</p>
+            <a href="#details" class="btn">Lihat Detail Acara</a>
+        </div>
     </header>
 
-    <section>
-        <h3>📅 Hari/Tanggal:</h3>
-        <p>Sabtu, 22 Desember 2024</p>
+ <section id="details" class="details">
+    <h3>Detail Acara</h3>
+    <div class="detail-item">
+        <i class="icon">📅</i>
+        <p><strong>Hari/Tanggal:</strong> Sabtu, 21 Desember 2024</p>
+    </div>
+    <div class="detail-item">
+        <i class="icon">⏰</i>
+        <p><strong>Waktu:</strong> Pukul 10.00 WIB s/d selesai</p>
+    </div>
+    <div class="detail-item">
+        <i class="icon">📍</i> <!-- Pastikan ikon lokasi menggunakan simbol lokasi -->
+        <p><strong>Lokasi:</strong> Perumahan Nuansa Citra Madani, Blok E No. 1, Pasir Putih, Tanah Merah, Kampar</p>
+    </div>
+    <a href="https://maps.app.goo.gl/1rxV3RczFqBzPf3EA" target="_blank" class="btn">Lihat Lokasi di Google Maps</a>
+</section>
 
-        <h3>⏰ Waktu:</h3>
-        <p>Pukul 10.00 WIB s/d selesai</p>
-
-        <h3>📍 Lokasi:</h3>
-        <p>Perumahan Nuansa Citra Madani, Blok E No. 1, Pasir Putih, Tanah Merah, Kampar</p>
-        <a href="https://goo.gl/maps" target="_blank">Lihat Lokasi di Google Maps</a>
+    <section class="gallery">
+        <h3>Gallery Prewedding</h3>
+        <div class="gallery-images">
+            <img src="assets/images/DSC04168.jpg" alt="Foto Prewedding 1">
+            <img src="assets/images/DSC04399.jpg" alt="Foto Prewedding 2">
+            <img src="assets/images/YNI05919.jpg" alt="Foto Prewedding 3">
+        </div>
     </section>
 
-    <section>
-        <h3>RSVP (Konfirmasi Kehadiran):</h3>
-        <p>📞 0853-xxxx-xxxx (Mempelai Pria)</p>
-        <p>📞 0822-xxxx-xxxx (Mempelai Wanita)</p>
-    </section>
+    <section class="music">
+    <h3>Musik Latar</h3>
+    <audio id="background-music" loop>
+        <source src="assets/music/you-are-falling-in-love.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutar audio.
+    </audio>
+    <button onclick="document.getElementById('background-music').play()">Putar Musik</button>
+</section>
 
-    <section>
+    <section class="quote">
         <h3>Quotes Cinta</h3>
         <blockquote>"Cinta sejati adalah perjalanan panjang yang kita tempuh bersama dalam keindahan dan tantangan."</blockquote>
     </section>
 
     <footer>
-        <p>Salam hangat,</p>
-        <p><strong>Satriawan & Marta</strong></p>
+        <p>With Love,</p>
+        <h2>Satriawan & Marta</h2>
     </footer>
 </body>
 </html>
