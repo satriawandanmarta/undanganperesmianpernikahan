@@ -82,12 +82,14 @@ p {
     justify-content: center; /* Pusatkan konten secara vertikal */
     align-items: center; /* Pusatkan konten secara horizontal */
     height: 100vh; /* Buat tinggi elemen setara satu layar penuh */
-    padding: 20px; /* Beri jarak di sekitar konten */
+    padding: 40px; /* Beri jarak di sekitar konten */
     background: white; /* Latar belakang putih */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%; /* Lebar maksimum 90% dari layar */
     max-width: 400px; /* Kurangi maksimal lebar menjadi 500px */
+    margin-left: auto;
+    margin-right: auto;
     margin: 0 auto; /* Tengah secara horizontal */
 }
 
