@@ -18,22 +18,22 @@
         </div>
     </header>
 
- <section id="details" class="details">
-    <h3>Detail Acara</h3>
-    <div class="detail-item">
-        <i class="icon">📅</i>
-        <p><strong>Hari/Tanggal:</strong> Sabtu, 21 Desember 2024</p>
-    </div>
-    <div class="detail-item">
-        <i class="icon">⏰</i>
-        <p><strong>Waktu:</strong> Pukul 10.00 WIB s/d selesai</p>
-    </div>
-    <div class="detail-item">
-        <i class="icon">📍</i> <!-- Pastikan ikon lokasi menggunakan simbol lokasi -->
-        <p><strong>Lokasi:</strong> Perumahan Nuansa Citra Madani, Blok E No. 1, Pasir Putih, Tanah Merah, Kampar</p>
-    </div>
-    <a href="https://maps.app.goo.gl/1rxV3RczFqBzPf3EA" target="_blank" class="btn">Lihat Lokasi di Google Maps</a>
-</section>
+    <section id="details" class="details">
+        <h3>Detail Acara</h3>
+        <div class="detail-item">
+            <i class="icon">📅</i>
+            <p><strong>Hari/Tanggal:</strong> Sabtu, 21 Desember 2024</p>
+        </div>
+        <div class="detail-item">
+            <i class="icon">⏰</i>
+            <p><strong>Waktu:</strong> Pukul 10.00 WIB s/d selesai</p>
+        </div>
+        <div class="detail-item">
+            <i class="icon">📍</i>
+            <p><strong>Lokasi:</strong> Perumahan Nuansa Citra Madani, Blok E No. 1, Pasir Putih, Tanah Merah, Kampar</p>
+        </div>
+        <a href="https://maps.app.goo.gl/1rxV3RczFqBzPf3EA" target="_blank" class="btn">Lihat Lokasi di Google Maps</a>
+    </section>
 
     <section class="gallery">
         <h3>Gallery Prewedding</h3>
@@ -45,17 +45,21 @@
     </section>
 
     <section class="music">
-    <h3>Musik Latar</h3>
-    <audio id="background-music" loop autoplay>
-        <source src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/you-are-falling-in-love-you.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung pemutar audio.
-    </audio>
-    <button onclick="document.getElementById('background-music').play()">Putar Musik</button>
-</section>
+        <h3>Musik Latar</h3>
+        <audio id="background-music" loop autoplay muted>
+            <source src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/you-are-falling-in-love-you.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung pemutar audio.
+        </audio>
+        <div>
+            <button onclick="document.getElementById('background-music').play()">Putar Musik</button>
+            <button onclick="document.getElementById('background-music').pause()">Jeda Musik</button>
+            <button onclick="document.getElementById('background-music').muted = !document.getElementById('background-music').muted;">Toggle Suara</button>
+        </div>
+    </section>
 
     <section class="quote">
         <h3>Quotes Cinta</h3>
-        <blockquote>""Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia." — Matius 19:6 </blockquote>
+        <blockquote>“Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.” — Matius 19:6 </blockquote>
     </section>
 
     <footer>
