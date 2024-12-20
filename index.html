@@ -46,12 +46,14 @@
         </div>
     </section>
 
+    <!-- Musik Section -->
     <section class="music">
         <h3>Musik Latar</h3>
-        <audio id="background-music" loop autoplay muted>
+        <audio id="background-music" loop autoplay>
             <source src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/you-are-falling-in-love-you.mp3" type="audio/mpeg">
             Browser Anda tidak mendukung pemutar audio.
         </audio>
+        <button id="music-control" class="btn">Pause Musik</button>
     </section>
 
     <section class="quote">
@@ -63,5 +65,21 @@
         <p>With Love,</p>
         <h2>Satriawan & Marta</h2>
     </footer>
+
+    <!-- JavaScript untuk Kontrol Musik -->
+    <script>
+        const music = document.getElementById('background-music');
+        const controlButton = document.getElementById('music-control');
+
+        controlButton.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                controlButton.textContent = 'Pause Musik';
+            } else {
+                music.pause();
+                controlButton.textContent = 'Play Musik';
+            }
+        });
+    </script>
 </body>
 </html>
