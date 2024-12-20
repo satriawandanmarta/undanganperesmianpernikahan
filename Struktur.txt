@@ -2,3 +2,9 @@ undangan-pernikahan/
 ├── index.html
 ├── style.css
 └── assets/ (opsional untuk gambar/foto)
+    ├── images/
+    │   ├── gambar1.jpg
+    │   ├── gambar2.jpg
+    │   └── gambar3.jpg
+    ├── music/
+        └── lagu.mp3
