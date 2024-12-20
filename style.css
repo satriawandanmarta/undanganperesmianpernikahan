@@ -281,3 +281,23 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.gallery-images {
+    display: flex;
+    flex-direction: column; /* Susun dalam kolom */
+    gap: 15px; /* Jarak antar baris */
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center; /* Pusatkan gambar di baris */
+    gap: 15px; /* Jarak antar gambar dalam baris */
+}
+
+.gallery-row img {
+    width: 100%;
+    max-width: 150px; /* Ukuran maksimal gambar */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
