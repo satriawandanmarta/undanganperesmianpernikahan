@@ -42,7 +42,7 @@ p {
 /* Hero Section */
 .hero {
     background: url('https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/1.jpg') no-repeat center center/cover;
-    height: 100vh; /* Membuat hero section full screen */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,16 +77,18 @@ p {
 
 /* Detail Acara Section */
 .details {
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
     background: white;
     text-align: center;
-    margin-top: 40px;
-    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .details h3 {
@@ -175,7 +177,7 @@ footer {
     padding: 20px;
 }
 
-/* Mobile Styling (Responsive Design for Android & iOS) */
+/* Mobile Styling */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5em;
@@ -217,7 +219,7 @@ footer {
     }
 
     .hero {
-        height: 100vh; /* Menjaga hero tetap penuh di perangkat mobile */
+        height: 100vh;
     }
 
     .hero h1 {
@@ -232,7 +234,7 @@ footer {
 /* Map Container Styling */
 .map-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -241,37 +243,6 @@ footer {
 
 .map-container iframe {
     width: 100%;
-    height: 300px; /* Adjust the height of the map */
+    height: 300px;
     border: 0;
-}
-
-/* Map Container Styling */
-.map-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 300px; /* Tinggi peta */
-    border: 0;
-}
-
-.details {
-    display: flex; /* Untuk memusatkan konten */
-    flex-direction: column; /* Atur konten dalam kolom */
-    justify-content: center; /* Pusatkan konten secara vertikal */
-    align-items: center; /* Pusatkan konten secara horizontal */
-    height: 100vh; /* Buat tinggi elemen setara satu layar penuh */
-    padding: 20px; /* Beri jarak di sekitar konten */
-    background: white; /* Latar belakang putih */
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Buat elemen selebar layar */
-    max-width: 600px; /* Maksimal lebar pada layar besar */
-    margin: 0 auto; /* Tengah secara horizontal */
 }
