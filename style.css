@@ -113,12 +113,12 @@ p {
     line-height: 1.5;
 }
 
-.btn {
+.details .btn {
     background: #ffd700;
     color: #333;
 }
 
-.btn:hover {
+.details .btn:hover {
     background: #e6b800;
 }
 
@@ -138,6 +138,7 @@ p {
 .gallery-images img {
     width: 100%;
     max-width: 250px; /* Menyesuaikan ukuran gambar agar sesuai di layar kecil */
+    height: auto; /* Menjaga proporsi gambar */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
