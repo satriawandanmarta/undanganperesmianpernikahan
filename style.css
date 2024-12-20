@@ -112,22 +112,6 @@ p {
     line-height: 1.5;
 }
 
-/* Map Container Styling */
-.map-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 300px; /* Tinggi peta */
-    border: 0;
-}
-
 /* Gallery Section */
 .gallery {
     padding: 40px;
@@ -243,4 +227,51 @@ footer {
     .hero h2 {
         font-size: 1.8em;
     }
+}
+
+/* Map Container Styling */
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px; /* Adjust the height of the map */
+    border: 0;
+}
+
+/* Map Container Styling */
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px; /* Tinggi peta */
+    border: 0;
+}
+
+.details {
+    display: flex; /* Untuk memusatkan konten */
+    flex-direction: column; /* Atur konten dalam kolom */
+    justify-content: center; /* Pusatkan konten secara vertikal */
+    align-items: center; /* Pusatkan konten secara horizontal */
+    height: 100vh; /* Buat tinggi elemen setara satu layar penuh */
+    padding: 20px; /* Beri jarak di sekitar konten */
+    background: white; /* Latar belakang putih */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Buat elemen selebar layar */
+    max-width: 600px; /* Maksimal lebar pada layar besar */
+    margin: 0 auto; /* Tengah secara horizontal */
 }
